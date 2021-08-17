@@ -1,0 +1,12 @@
+main {
+  max-width: 120rem;
+  margin: 4rem auto;
+  padding: 3rem 3rem;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 2rem;
+}

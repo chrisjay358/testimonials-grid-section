@@ -1,0 +1,31 @@
+$color-Moderate-violet: hsl(263, 55%, 52%);
+$color-dark-grayish-blue: hsl(217, 19%, 35%);
+$color-Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$color-White: hsl(0, 0%, 100%);
+
+// ### Neutral
+
+$color-Light-gray: hsl(0, 0%, 81%);
+$color-Light-grayish-blue: hsl(210, 46%, 95%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% --> 1rem = 10px
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: $color-Light-grayish-blue;
+  color: $color-Light-gray;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}

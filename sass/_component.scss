@@ -1,0 +1,113 @@
+.card {
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+
+  &--1 {
+    background: $color-Moderate-violet;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 25em) {
+      grid-column: 1 / span 2;
+    }
+
+    &::before {
+      content: "\201c";
+      position: absolute;
+      top: -6rem;
+      right: 6.5rem;
+      line-height: 1;
+      opacity: 0.5;
+      font-size: 50rem;
+      color: $color-Light-grayish-blue;
+      font-family: sans-serif;
+    }
+  }
+
+  &--2 {
+    background: $color-dark-grayish-blue;
+  }
+
+  &--3 {
+    background: $color-White;
+
+    @media only screen and (min-width: 25em) {
+      grid-row: 2 / span 1;
+    }
+
+    .card__contact--name,
+    .card__heading,
+    .card__content {
+      color: $color-dark-grayish-blue !important;
+    }
+
+    img {
+      border: none !important;
+    }
+  }
+
+  &--4 {
+    background: $color-Very-dark-blackish-blue;
+
+    @media only screen and (min-width: 25em) {
+      grid-column: 2 / span 2;
+    }
+  }
+
+  &--5 {
+    background: $color-White;
+
+    @media only screen and (min-width: 25em) {
+      grid-column: 4 / -1;
+      grid-row: 1 / span 2;
+    }
+
+    .card__contact--name,
+    .card__heading,
+    .card__content {
+      color: $color-dark-grayish-blue !important;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    gap: 1.5rem;
+
+    img {
+      display: block;
+      width: 4rem;
+      border-radius: 100%;
+
+      border: 2px solid $color-Light-gray;
+    }
+
+    .card__contact {
+      display: grid;
+      grid-template-rows: repeat(2, min-content);
+
+      &--name {
+        color: $color-Light-grayish-blue;
+        font-size: 1.6rem;
+      }
+
+      &--details {
+        color: hsla(210, 46%, 95%, 0.5);
+        font-size: 0.2rem;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    color: $color-White;
+    margin: 2rem 0;
+  }
+
+  &__content {
+    font-size: 1.3rem;
+    color: hsla(210, 46%, 95%, 0.7);
+  }
+}

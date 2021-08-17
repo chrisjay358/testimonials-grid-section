@@ -1,0 +1,14 @@
+{
+  "name": "testimonals",
+  "version": "1.0.0",
+  "description": "Challenge for testimonals grid section",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "chrisjay358",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
